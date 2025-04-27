@@ -27,8 +27,3 @@ practice of CRUD operation (create, read, update, delete) using backend  RestFul
 - Passed data from the server to EJS templates
 
 
-## 🚀 How to Run the Project
-
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/biswajit0123/node_sql_RestApi_CRUD.git
