@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all users </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <thead>
+<tr>
+    <th>ID</th>
+    <th>USERNAME</th>
+    <th>EMAIL</th>
+    <th>EDIT</th>
+</tr>
+        </thead>
+
+        <tbody>
+            <% result.map(user => { %>
+              <tr>
+                <td><%= user.id %></td>
+                <td><%=  user.username %></td>
+                <td><%= user.email %></td>
+                <td>
+                    <form action="http://localhost:3000/users/<%= user.id %>/edit" method="get">
+                        <button>edit username</button>
+                    </form>
+                </td>
+              </tr>
+            <% }) %>
+          </tbody>
+          
+    </table>
+</body>
+</html>
